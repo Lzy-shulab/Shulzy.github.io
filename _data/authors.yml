@@ -1,18 +1,10 @@
 # Authors
 
-Name Name:
-  name        : "Name Name"
-  uri         : "https://name.com"
-  email       : "name@name.com"
-  bio         : "This is the first name."
-  avatar      : "bio-photo-2.jpg"
-  twitter     : "name"
-  google_plus : "Name"
-
-Name2 Name2:
-  name        : "Name2 Name2"
-  email       : "name2@name2.com"
-  bio         : "I ordered what?"
-  avatar      : "bio-photo.jpg"
-  twitter     : "name2"
-  google_plus : "Name"
+Zhenyu Andy Lin:
+  name        : "Zhenyu (Andy) Lin"
+  uri         : "https://lzy-shulab.github.io/Shulzy.github.io"
+  email       :
+  bio         : "Graduate student in Electronic Information at Shanghai University."
+  avatar      :
+  googlescholar: "https://scholar.google.com/citations?user=l9FsO-MAAAAJ&hl=zh-CN&oi=sra"
+  github      : "Lzy-shulab"

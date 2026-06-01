@@ -1,25 +1,22 @@
 {
-  "name": "academic-pages",
+  "name": "zhenyu-lin-homepage",
   "version": "0.8.1.1",
-  "description": "Academic Pages Mistakes Jekyll theme npm build scripts",
+  "description": "Jekyll build scripts for Zhenyu (Andy) Lin's academic homepage",
   "repository": {
     "type": "git",
-    "url": "https://github.com/academicpages/academicpages.github.io"
+    "url": "https://github.com/Lzy-shulab/Shulzy.github.io"
   },
   "keywords": [
     "jekyll",
     "theme",
     "minimal"
   ],
-  "contributors": [
-    "Michael Rose",
-    "Robert Zupko"
-  ],
+  "contributors": [],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/academicpages/academicpages.github.io/issues"
+    "url": "https://github.com/Lzy-shulab/Shulzy.github.io/issues"
   },
-  "homepage": "https://github.com/academicpages/academicpages.github.io",
+  "homepage": "https://lzy-shulab.github.io/Shulzy.github.io",
   "engines": {
     "node": ">= 0.10.0"
   },
