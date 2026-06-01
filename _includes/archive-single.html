@@ -13,7 +13,7 @@
 {% endif %}
 
 <div class="{{ include.type | default: "list" }}__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+  <article class="archive__item{% if post.collection == 'publications' %} pub-card{% endif %}" itemscope itemtype="http://schema.org/CreativeWork">
     {% if include.type == "grid" and teaser %}
       <div class="archive__item-teaser">
         <img src=
@@ -41,25 +41,45 @@
         {% if post.collection == 'teaching' %}
           <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif post.collection == 'publications' %}
-          <p class="pub-meta">
-          {% if post.status %}
-            <strong class="text-red">{{ post.status }}</strong>{% if post.venue %}, <i>{{ post.venue }}</i>{% endif %}
-          {% else %}
-            Published in <i>{{ post.venue }}</i>{% if post.date %}, {{ post.date | date: "%Y" }}{% endif %}
-          {% endif %}
-          {% if post.doi %}<br /><strong>DOI:</strong> <a href="https://doi.org/{{ post.doi }}">{{ post.doi }}</a>{% endif %}
-          {% if post.impact %}<br /><strong class="text-red">{{ post.impact }}</strong>{% endif %}
-          </p>
+          <div class="pub-card__kv">
+            <div class="pub-card__label">Journal</div>
+            <div class="pub-card__value"><i>{{ post.venue }}</i></div>
+            <div class="pub-card__label">Year</div>
+            <div class="pub-card__value">{% if post.date %}{{ post.date | date: "%Y" }}{% else %}In progress{% endif %}</div>
+            {% if post.status %}
+              <div class="pub-card__label">Status</div>
+              <div class="pub-card__value"><strong class="text-red">{{ post.status }}</strong></div>
+            {% endif %}
+            {% if post.doi %}
+              <div class="pub-card__label">DOI</div>
+              <div class="pub-card__value"><a href="https://doi.org/{{ post.doi }}">{{ post.doi }}</a></div>
+            {% endif %}
+            {% if post.impact %}
+              <div class="pub-card__label">Highlight</div>
+              <div class="pub-card__value"><strong class="text-red">{{ post.impact }}</strong></div>
+            {% endif %}
+            {% if post.excerpt %}
+              <div class="pub-card__label">Summary</div>
+              <div class="pub-card__value">{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}</div>
+            {% endif %}
+            <div class="pub-card__label">Links</div>
+            <div class="pub-card__value pub-card__links">
+              <a href="{{ base_path }}{{ post.url }}">Details and BibTeX</a>
+              {% if post.paperurl %}<a href="{{ post.paperurl }}">Official Paper Page</a>{% endif %}
+            </div>
+          </div>
         {% elsif post.date %}
          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
         {% endif %}
 
-    {% if post.excerpt and site.read_more != 'enabled' %}
+    {% if post.collection == 'publications' %}
+    {% elsif post.excerpt and site.read_more != 'enabled' %}
     <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
     {% elsif post.excerpt and site.read_more == 'enabled' %}
     <p class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p></p>
     {% endif %}
-    
+
+    {% unless post.collection == 'publications' %}
     {% if post.paperurl %}
       <p class="pub-links"><a href="{{ post.paperurl }}">Official Paper Page</a></p>
     {% endif %}
@@ -91,6 +111,7 @@
     {% elsif post.bibtexurl %}
       <p><a href="{{ post.bibtexurl }}">Download Bibtex</a></p>
     {% endif %}
+    {% endunless %}
 
   </article>
 </div>

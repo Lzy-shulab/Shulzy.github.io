@@ -33,9 +33,9 @@ Research Interests
 Selected Highlights
 ======
 <div class="metrics-grid">
-  <div><span>48</span><strong>Citations</strong><p>FFYOLO, <em>Fire</em>, <span class="text-red">ESI Highly Cited Paper</span></p></div>
-  <div><span>44</span><strong>Citations</strong><p>LD-YOLO, <em>Forests</em>, CAS Zone 2</p></div>
-  <div><span>4</span><strong>Papers</strong><p>Forest fire detection, smoke detection, and Mamba-based forecasting.</p></div>
+  <div><span>99</span><strong>Total Citations</strong><p>Based on the published papers currently listed on this homepage.</p></div>
+  <div><span>ESI</span><strong>Highlighted Paper</strong><p><span class="text-red">FFYOLO</span>, <em>Fire</em>, ESI Highly Cited Paper.</p></div>
+  <div><span>4</span><strong>Papers</strong><p>Published journal papers and current major-revision manuscript.</p></div>
 </div>
 
 Publications
