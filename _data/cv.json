@@ -62,31 +62,31 @@
   "references": [],
   "publications": [
     {
-      "name": "FFYOLO: a lightweight forest fire detection model based on YOLOv8",
+      "name": "FFYOLO: A Lightweight Forest Fire Detection Model Based on YOLOv8",
       "publisher": "Fire",
-      "releaseDate": "2024-01-01",
-      "website": "",
+      "releaseDate": "2024-03-01",
+      "website": "https://doi.org/10.3390/fire7030093",
       "summary": "Citations: 48. CAS Journal Ranking: Zone 3. ESI Highly Cited Paper."
     },
     {
-      "name": "LD-YOLO: A lightweight dynamic forest fire and smoke detection model with dysample and spatial context awareness module",
+      "name": "LD-YOLO: A Lightweight Dynamic Forest Fire and Smoke Detection Model with Dysample and Spatial Context Awareness Module",
       "publisher": "Forests",
-      "releaseDate": "2024-01-01",
-      "website": "",
+      "releaseDate": "2024-09-01",
+      "website": "https://doi.org/10.3390/f15091630",
       "summary": "Citations: 44. CAS Journal Ranking: Zone 2."
     },
     {
-      "name": "An improved unmanned aerial vehicle forest fire detection model based on YOLOv8",
+      "name": "An Improved Unmanned Aerial Vehicle Forest Fire Detection Model Based on YOLOv8",
       "publisher": "Fire",
-      "releaseDate": "2025-01-01",
-      "website": "",
+      "releaseDate": "2025-03-01",
+      "website": "https://doi.org/10.3390/fire8040138",
       "summary": "Citations: 7. CAS Journal Ranking: Zone 3."
     },
     {
-      "name": "CQMTformer: Channel query enhanced mamba-transformer fusion architecture for multivariate time series forecasting",
+      "name": "CQMTformer: Channel Query Enhanced Mamba-Transformer Fusion Architecture for Multivariate Time Series Forecasting",
       "publisher": "Expert Systems with Applications",
-      "releaseDate": "",
-      "website": "",
+      "releaseDate": "2026-01-01",
+      "website": "https://doi.org/10.2139/ssrn.6688579",
       "summary": "Status: Major Revision."
     }
   ],

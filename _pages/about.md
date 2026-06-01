@@ -7,16 +7,37 @@ redirect_from:
   - /about.html
 ---
 
-I am Zhenyu (Andy) Lin, a graduate student in Electronic Information at Shanghai University. My research focuses on Mamba-based hyperspectral image classification and reconstruction.
+<section class="home-hero">
+  <p class="eyebrow">Academic Homepage</p>
+  <h1>Zhenyu (Andy) Lin</h1>
+  <p class="lead">Graduate student in <strong>Electronic Information</strong> at <strong>Shanghai University</strong>, focusing on <span class="text-red">Mamba-based hyperspectral image classification and reconstruction</span>.</p>
+  <div class="hero-actions">
+    <a class="btn btn--primary" href="{{ site.baseurl }}/publications/">Publications</a>
+    <a class="btn btn--inverse" href="{{ site.author.googlescholar }}">Google Scholar</a>
+  </div>
+</section>
 
-I received my bachelor's degree in Data Science and Big Data Technology from Zhejiang University of Science and Technology.
+Education
+======
+* <strong>M.E. in Electronic Information</strong>, Shanghai University
+* <strong>B.S. in Data Science and Big Data Technology</strong>, Zhejiang University of Science and Technology
 
 Research Interests
 ======
-* Mamba-based models
-* Hyperspectral image classification
-* Hyperspectral image reconstruction
+<div class="highlight-list">
+  <div><strong>Mamba-based models</strong> for efficient long-range sequence and image representation learning.</div>
+  <div><strong>Hyperspectral image classification</strong> with state-space and attention-enhanced architectures.</div>
+  <div><strong>Hyperspectral image reconstruction</strong> for robust and information-rich remote sensing analysis.</div>
+</div>
+
+Selected Highlights
+======
+<div class="metrics-grid">
+  <div><span>48</span><strong>Citations</strong><p>FFYOLO, <em>Fire</em>, <span class="text-red">ESI Highly Cited Paper</span></p></div>
+  <div><span>44</span><strong>Citations</strong><p>LD-YOLO, <em>Forests</em>, CAS Zone 2</p></div>
+  <div><span>4</span><strong>Papers</strong><p>Forest fire detection, smoke detection, and Mamba-based forecasting.</p></div>
+</div>
 
 Publications
 ======
-My publications include lightweight forest fire and smoke detection models based on YOLOv8, as well as Mamba-based modeling for multivariate time series forecasting. A full list is available on the [Publications]({{ site.baseurl }}/publications/) page and on my [Google Scholar profile](https://scholar.google.com/citations?user=l9FsO-MAAAAJ&hl=zh-CN&oi=sra).
+My publications cover lightweight forest fire and smoke detection models based on YOLOv8 and Mamba-based modeling for multivariate time series forecasting. The full list, including DOI links, paper URLs, abstract summaries, and BibTeX entries, is available on the [Publications]({{ site.baseurl }}/publications/) page.

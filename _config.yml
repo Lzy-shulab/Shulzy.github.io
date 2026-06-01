@@ -23,7 +23,7 @@ repository               : "Lzy-shulab/Shulzy.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           :
+  avatar           : "Touxiang.png"
   name             : "Zhenyu (Andy) Lin"
   pronouns         : # example: "she/her"  
   bio              : "Graduate student in Electronic Information at Shanghai University. Research interests: Mamba-based hyperspectral image classification and reconstruction."
@@ -139,7 +139,7 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 :  # Social media default site image
+og_image                 : "Touxiang.png"  # Social media default site image
 og_description           :  # Social media default site image description
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
